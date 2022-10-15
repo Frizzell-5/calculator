@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "styleSheet" href = "style.css"/>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class = "calculator">
+        <div id = "screen">
+            <div id = "mini-screen"></div>
+        </div>
+    <div class = "calc-grid">
+        
+        <button data-number class="number" id = "button" onclick="numSave(7)" >7</button>
+        <button data-number class="number" id = "button" onclick="numSave(8)" >8</button>
+        <button data-number class="number" id = "button" onclick="numSave(9)" >9</button>
+        <button data-clear-last class="operator" id = "button" onclick="reset()" >C</button>
+        <button data-all-clear class="operator" id = "button" onclick="reset()" id="AC">AC</button>
+        <button data-number class="number" id = "button" onclick="numSave(4)" >4</button>
+        <button data-number class="number" id = "button" onclick="numSave(5)" >5</button>
+        <button data-number class="number" id = "button" onclick="numSave(6)" >6</button>
+        <button data-operator class="operator" id = "button" onclick="opSave('÷')" >÷</button>
+        <button data-operator class="operator" id = "button" onclick="opSave('*')" >x</button>
+        <button data-number class="number" id = "button" onclick="numSave(1)" value = "1">1</button>
+        <button data-number class="number" id = "button" onclick="numSave(2)" value = "2">2</button>
+        <button data-number class="number" id = "button" onclick="numSave(3)" value = "3">3</button>
+        <button data-operator class="operator" id = "button" onclick="opSave('+')" >+</button>
+        <button data-operator class="operator" id = "button" onclick="opSave('-')" >-</button>
+        <button data-negative-positive class="operator" id = "button" onclick="opSave('+/-')" >+/-</button>
+        <button data-number class="number" id = "button" onclick="numSave(0)" >0</button>
+        <button data-number class="operator" id = "button" onclick="opSave('.')" >.</button>
+        <button data-operator class="large-btn" id = "button" onclick="opSave('=')" >=</button>
+    </div>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
+
